@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>
+            Giriş Yap
+        </legend>
+        <input type="email" placeholder="E-Posta">
+        <input type="password" placeholder="Parola">
+        <button>Giriş Yap</button>
+    </fieldset>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+        *{
+            font-family: calibri;
+            font-size: 22px;
+            transition: all ease 0.4s;
+        }
+        fieldset{
+            border: 2px solid black;
+            border-radius: 8px;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            background-image: linear-gradient(to left, #0B486B, #F56217);
+            background-size: 120%;
+        }
+        legend{
+            font-size: 28px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        input{
+            border-radius: 6px;
+            background-color: rgb(31, 29, 29);
+            border: 0;
+            color: white;
+            outline: none;
+            height: 32px;
+            padding-left: 8px;
+        }
+        input::placeholder{
+            color: gray;
+        }
+        input:focus::placeholder{
+            color: rgb(182, 165, 165);
+        }
+        button{
+            background-image: linear-gradient(to right, #e96443, #904e95);
+            border: 0;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+            height: 36px;
+            margin-left: 8px;
+            transition: all ease 0.4s;
+        }
+        button:hover{
+            filter: saturate(1.7);
+        }
+    </style>
+</body>
+</html>
